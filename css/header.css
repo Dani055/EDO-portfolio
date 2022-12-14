@@ -1,0 +1,33 @@
+header{
+    background-color: rgb(43, 38, 38);
+    color: rgb(243, 243, 243);
+    padding: 1em 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+a{
+    text-decoration: none;
+}
+header a{
+    color: white;
+    transition: color 0.1s ease;
+}
+header a:hover{
+    color:rgb(255, 231, 61);
+}
+header .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .wrapper ul{
+    display: flex;
+    list-style: none outside;
+}
+header .wrapper ul li{
+    font-size: 1.1em;
+    padding: 0.2em;
+    margin: 0 0.5em;
+}

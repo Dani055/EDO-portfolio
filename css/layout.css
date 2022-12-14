@@ -1,0 +1,156 @@
+.site{
+    background-color: rgb(219, 219, 219);
+    min-height: 100vh;
+    z-index: -100;
+}
+.wrapper{
+    max-width: 80em;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+.media img{
+    width: 100%;
+    height: auto;
+}
+.displaypiece{
+    position: relative;
+    overflow: hidden;
+}
+.displaypiece .wrapper{
+    max-height: 550vh;
+    min-height: 55vh;
+    text-align: center;
+    padding-top: 1.2em;
+}
+.displaypiece img{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(3px);
+    z-index: 0;
+}
+.displaypiece:nth-of-type(2) img{
+    top: 0;
+    left: 0;
+    transform: scaleX(-1) translate(10%, -50%);
+    filter: blur(0px);
+}
+.panel{
+    margin-top: 2em;
+}
+.panel .wrapper{
+    display: flex;
+}
+.wrapper .content-right{
+    flex: 0 0 50%;
+    background-color: rgb(255, 231, 61);
+    padding: 3em;
+    border-radius: 4px;
+    box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 0.3);
+}
+
+.wrapper .content-left{
+    flex: 0 0 calc(50% + 2em);
+    z-index: 2;
+    padding: 2em;
+    position: relative;
+    border-radius: 2px;
+    box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 0.3);
+}
+.bg-image{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("../images/blacksea.png");
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    filter: contrast(90%);
+}
+.content-left h2{
+    margin: 1em 0 0 1em;
+    flex: 0 0 100%;
+    color: rgb(255, 231, 61);
+    text-shadow: 2px 2px black
+}
+.content-left-text{
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.content-left ul{
+    color: rgb(255, 231, 61);
+    flex: 0 0 30%;
+    text-shadow: 2px 2px black;
+    margin-left: 2em;
+    margin-top: 2em;
+    font-size: 1.3em;
+}
+h2.align-center {
+    text-align: center;
+    margin-left: 0;
+}
+
+.bio{
+    margin-bottom: 2em;
+}
+.bio .inner-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: rgb(225, 225, 225);
+    background-color: rgb(48, 38, 38);
+    border-radius: 3px;
+    margin-top: -2em;
+    padding-top: 4em;
+    padding-bottom: 2em;
+}
+.bio .media{
+    flex: 0 0 25%;
+}
+.bio-content{
+    flex: 0 0 65%;
+}
+.spacer{
+    padding: 2em 0;
+    margin-left: -2em;
+    z-index: 2;
+}
+.project-content{
+    display: flex;
+}
+.assignment-1 .wrapper{
+    max-width: 90em;
+    position: relative;
+    margin-bottom: 1em;
+}
+.assignment-2 .wrapper{
+    max-width: 50em;
+    margin-bottom: 1em;
+}
+.assignment-3 .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 1em;
+}
+.assignment-3 .media{
+    margin-top: 2em;
+    flex: 0 1 48%;
+}
+
+.assignment-4 .wrapper{
+    max-width: 50em;
+    text-align: center;
+}
+footer{
+    background-color: rgb(216, 193, 16);
+    padding: 2em;
+    color: black;
+    text-align: center;
+}

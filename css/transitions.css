@@ -1,0 +1,17 @@
+.logo a:hover{
+    color:rgb(43, 38, 38)
+}
+.assignment-2 .media:hover img{
+    transform: scale(1.05);
+}
+.assignment-3 .media:hover img{
+    filter: grayscale(0.5);
+}
+.assignment-4 .media:hover img{
+    transform: scale(1.05);
+}
+.assignment-4 a:hover{
+    background-color: transparent;
+    color: rgb(43, 38, 38);
+    border: 3px solid rgb(43, 38, 38);
+}
